@@ -1,0 +1,55 @@
+---
+title: "prac1_exercises"
+format: html
+---
+
+
+```{r}
+sqrt(9)
+
+```
+```{r}
+round(3.14159)
+```
+```{r}
+round(3.14159, digits = 2)
+```
+
+```{r}
+print(seq(1, 10, 2))
+print(seq(5, 15, 5))
+print(seq(by = 2, from = 1, to = 10))
+```
+
+```{r}
+print(rep(2, 5))
+print(rep(x=2,times=5))
+```
+```{r}
+my_variable <- 12
+my_variable <- 10
+print(my_variable)
+```
+I will be trying out different types of variables.
+```{r}
+x <- 3
+y <- "cambridge"
+z <- TRUE
+print(class(x))
+print(class(y))
+print(class(z))
+```
+Exercise: making variables of different types.
+```{r}
+cell_id_1 <- "CX1"
+cell_id_2 <- "CX2"
+
+treated_1 <- TRUE
+treated_2 <- FALSE
+
+num_before_1 <- 5415
+num_before_2 <- 8123
+
+num_after_1 <- 1432
+num_after_2 <- 7543
+```
