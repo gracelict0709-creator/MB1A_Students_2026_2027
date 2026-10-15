@@ -1,0 +1,15 @@
+---
+title: "Quarto Brain Data"
+author: "Grace"
+format: html
+---
+I am calculating the total number of genes with regionally elevated expression in the forebrain regions in human, pig and mouse, and finding the species with the highest number of genes with regionally elevated expression.
+```{r}
+total_elevated_genes_human <- sum(180,83,57,110)
+total_elevated_genes_pig <- sum(109,157,31,45)
+total_elevated_genes_mouse <- sum(55,185,60,98)
+print(total_elevated_genes_human)
+print(total_elevated_genes_pig)
+print(total_elevated_genes_mouse)
+```
+The species with highest number of genes with regionally elevated expression is Human, with 430. 
