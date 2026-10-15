@@ -1,0 +1,27 @@
+
+```{r}
+library(tidyverse)
+library(gt)
+data <- read_csv("data/weather_data.csv")
+gt(head(data))
+ggplot(data,aes(
+  x = observation_time,
+  y = temperature_c
+)) +
+    geom_line(colour = "blue") +
+  xlab("Date") +
+  ylab("Temp (C)") +
+  ggtitle("Temperature by Date")
+```
+```{r}
+ukhsa <- read_csv("data/ukhsa-chart-download.csv")
+gt(head(ukhsa))
+ggplot(ukhsa,aes(
+  x = date,
+  y = metric_value
+)) +
+    geom_line(colour = "red") +
+  xlab("Date") +
+  ylab("Cases") +
+  ggtitle("Cases by Date")
+```
