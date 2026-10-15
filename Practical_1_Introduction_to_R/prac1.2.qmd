@@ -1,0 +1,88 @@
+---
+title: "Packages"
+format: html
+---
+
+
+```{r}
+install.packages("fortunes")
+library(fortunes)
+library(tidyverse)
+install.packages("gt")
+library(gt)
+```
+```{r}
+my_first_vector <- c(1, 5, 9)
+print(my_first_vector)
+```
+```{r}
+character_vec <- c("hello", "this", "is", "a", "character", "vector")
+print(character_vec)
+```
+```{r}
+logical_vec <- c(TRUE, FALSE, TRUE)
+print(logical_vec)
+```
+```{r}
+x <- 1
+y <- 2
+z <- 3
+
+xyz_vec <- c(x, y, z)
+```
+
+```{r}
+nice_food <- c("cheese", "beans", "potatoes")
+
+print(nice_food[1])
+```
+```{r}
+x <- c(2, -4, 6, -2)
+x*5
+x>5
+sum(x)
+abs(x)
+```
+```{r}
+my_data_frame <- tibble(
+  fruit = c("apple", "pear", "banana"),
+  length = c(22, 30, 55),
+  weight = c(150, 165, 170)
+)
+
+
+print(my_data_frame)
+```
+or
+```{r}
+fruits <- c("apple", "pear", "banana")
+lengths <- c(22, 30, 55)
+weights <- c(150, 165, 170)
+
+my_data_frame <- tibble(
+  fruit = fruits,
+  length = lengths,
+  weight = weights
+)
+
+
+print(my_data_frame)
+```
+better formatting
+```{r}
+my_data_frame <- tibble(
+  fruit = c("apple", "pear", "banana"),
+  length = c(22, 30, 55),
+  weight = c(150, 165, 170)
+)
+
+gt(my_data_frame)
+```
+```{r}
+weather <- read_csv("data/weather_data.csv")
+gt(weather)
+```
+```{r}
+read.csv("data/ukhsa-chart-download.csv")
+```
+

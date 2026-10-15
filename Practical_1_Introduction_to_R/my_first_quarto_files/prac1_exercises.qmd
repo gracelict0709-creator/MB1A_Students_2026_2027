@@ -52,4 +52,10 @@ num_before_2 <- 8123
 
 num_after_1 <- 1432
 num_after_2 <- 7543
+
+#combine into vectors
+cell_id <- c(cell_id_1, cell_id_2)
+treated <- c(treated_1, treated_2)
+num_before <- c(num_before_1, num_before_2)
+num_after <- c(num_after_1, num_after_2)
 ```
